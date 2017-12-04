@@ -1,0 +1,27 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:m="urn:import:gwt.material.design.client.ui">
+	<ui:style>
+	.important {
+		font-weight: bold;
+	}
+	</ui:style>
+	<g:HTMLPanel> 
+	<m:MaterialHeader>
+		<m:MaterialNavBar>
+		<m:MaterialNavBrand href="#Test" float="LEFT" text="App Title"/>
+		<m:MaterialNavSection float="RIGHT">
+				<m:MaterialLink iconType="ACCOUNT_CIRCLE" iconPosition="LEFT" text="Account" textColor="WHITE" waves="LIGHT"/>
+				<m:MaterialLink iconType="AUTORENEW" iconPosition="LEFT" text="Refresh" textColor="WHITE" waves="LIGHT"/>
+				<m:MaterialTooltip text="Menu">
+					<m:MaterialLink iconType="SEARCH" textColor="WHITE" waves="LIGHT"/>
+				</m:MaterialTooltip>
+				<m:MaterialTooltip text="Starter">
+					<m:MaterialLink iconType="MORE_VERT" textColor="WHITE" waves="LIGHT"/>
+				</m:MaterialTooltip>
+			</m:MaterialNavSection>
+			</m:MaterialNavBar>
+		</m:MaterialHeader>
+	</g:HTMLPanel>
+</ui:UiBinder> 
